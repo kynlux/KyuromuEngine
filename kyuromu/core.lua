@@ -6,7 +6,7 @@ function cfcerror(args,values)
 		["294"]="nil argument required (%s = %s but expected: %s)"
 	}
 	local function giveerr(id)
-		cferror({["id"] = id},{["id"] = "number"})
+		cfcerror({["id"] = id},{["id"] = "number"})
 		local errstr=string.format("err: %d | ",id)
 		return errstr..errors[tostring(id)]..'\n'
 	end

@@ -23,5 +23,5 @@ function lbar(t,len)
 		io.write("#")
 		sleep(t/len)
 	end
-	io.write("] Done!")
+	io.write("] Done!\n")
 end

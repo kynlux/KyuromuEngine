@@ -1,5 +1,7 @@
 require "kyuromu"
 
-tcbprfm(function()
-	io.write()
-end, 10000)
+local tw = Tween.new(8,"linear",function(i)
+	io.write(tostring(i).."\n")
+end)
+
+tw:play()

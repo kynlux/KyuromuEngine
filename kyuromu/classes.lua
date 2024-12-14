@@ -1,3 +1,4 @@
+-- initialize object
 Object={}
 Object.__index=Object
 function Object.new(name,data,methods)
@@ -13,10 +14,12 @@ function Object.new(name,data,methods)
 	self.methods=methods
 	return self
 end
+-- attach child
 function Object.achild(self,child)
 	self.childs[child]=child
 	if child.name then child.parent=self end
 end
+-- parent
 function Object.parent(self,parent)
 	self.parent=parent
 	if parent.name then parent:achild(self) end
