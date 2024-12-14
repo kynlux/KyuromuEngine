@@ -1,0 +1,13 @@
+enum={
+	twstyle={
+		lnear="linear",
+		fmstrtoend="inout",
+		fmend="out",
+		fmstart="in",
+	},
+	flstyle={
+		rd="r",
+		wrt="w",
+		add="a"
+	}
+}
